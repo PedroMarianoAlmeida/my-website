@@ -12,7 +12,6 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
 } from 'reactstrap';
 
 const Header = (props) => {
@@ -23,50 +22,58 @@ const Header = (props) => {
     return (
         <div>
             <Navbar color="light" light expand={sizeToggle} className="d-flex justify-content-between">
-                <NavbarBrand><Link href="/"><a className="text-dark">Pedro Programmer</a></Link></NavbarBrand>
+                <NavbarBrand><Link href="/"><span className="text-dark clickable">Pedro Programmer</span></Link></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <div className={`align-content-end mr-1 d-none d-${sizeToggle}-flex`}>
                     <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar >
-                        <NavItem>
-                            <NavLink><Link href="/"><a className="text-dark">Home</a></Link></NavLink>
+                        <NavItem className="mx-2">
+                            <NavLink><Link href="/"><span className="text-dark clickable">Home</span></Link></NavLink>
                         </NavItem>
 
-                        <NavItem>
-                            <NavLink><Link href="/about"><a className="text-dark">About</a></Link></NavLink>
+                        <NavItem className="mx-2">
+                            <NavLink><Link href="/about"><span className="text-dark clickable">About</span></Link></NavLink>
                         </NavItem>
 
-                        <NavItem>
-                            <NavLink><Link href="/blog"><a className="text-dark">Blog</a></Link></NavLink>
+                        <NavItem className="mx-2">
+                            <NavLink><Link href="/blog"><span className="text-dark clickable">Blog</span></Link></NavLink>
                         </NavItem>
 
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                                <span className="text-dark">Dev Tips</span>
+                                <span className="text-dark mx-2">Dev Tips</span>
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                    <Link href="/code-tips/next-js"><a className="text-dark">Next.js</a></Link>
+                                    <Link href="/code-tips/next-js"><span className="text-dark">Next.js</span></Link>
                                 </DropdownItem>
 
                                 <DropdownItem>
-                                    <Link href="/code-tipsreact"><a className="text-dark">React</a></Link>
+                                    <Link href="/code-tips/react"><span className="text-dark">React</span></Link>
                                 </DropdownItem>
 
                                 <DropdownItem divider />
 
                                 <DropdownItem>                                   
-                                    <Link href="/code-tips/bootstrap"><a className="text-dark">Bootstrap</a></Link>
+                                    <Link href="/code-tips/bootstrap"><span className="text-dark">Bootstrap</span></Link>
                                 </DropdownItem>
 
                                 <DropdownItem>
-                                    <Link href="/code-tips/next-js"><a className="text-dark">ReactStrap</a></Link>
+                                    <Link href="/code-tips/reactstrap"><span className="text-dark">ReactStrap</span></Link>
+                                </DropdownItem>
+
+                                <DropdownItem>
+                                    <Link href="/code-tips/css"><span className="text-dark">CSS</span></Link>
                                 </DropdownItem>
 
                                 <DropdownItem divider />
 
                                 <DropdownItem>
-                                    <Link href="/code-tips/next-js"><a className="text-dark">JavaScript</a></Link>
+                                    <Link href="/code-tips/javascript"><span className="text-dark">JavaScript</span></Link>
+                                </DropdownItem>
+
+                                <DropdownItem>
+                                    <Link href="/code-tips/vs-code"><span className="text-dark">VS Code</span></Link>
                                 </DropdownItem>
 
                             </DropdownMenu>

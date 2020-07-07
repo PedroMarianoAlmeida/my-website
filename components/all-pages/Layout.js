@@ -5,14 +5,14 @@ import SEO from './SEO';
 
 const Layout = (props) => {
     return (
-        <React.Fragment>
+        <React.Fragment>        
             <SEO seo={props.seo || ""}/>
             <Header />
             <Container>
                 <Row>
                     {props.children}
                 </Row>
-            </Container>
+            </Container>           
         </React.Fragment>
     );
 }
