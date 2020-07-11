@@ -20,15 +20,17 @@ export default function Home() {
           <Row>
             <Col xs="12" md="7" className="align-self-center">
               <div className="lead">Hi, I am</div>
-              <div className="display-3" id="my-name">Pedro Almeida</div>
-              <div className="lead d-flex d-md-block justify-content-center" ><img src='/images/logos/next-js-logo.png' alt="Next" id='next-js-logo' /><span className="h-100">.js Developer</span></div>
+              <div id="apresentation">
+                <div className="display-3 d-flex d-md-block justify-content-center" id="my-name">Pedro Almeida</div>
+                <div className="lead d-flex d-md-block justify-content-center"><img src='/images/logos/next-js-logo.png' alt="Next" id='next-js-logo' /><span className="h-100">.js Developer</span></div>
+              </div>
               <div className="lead"> <FontAwesomeIcon icon={faEnvelope} className="mr-3" /><span className="small-letter">pedroprogrammer@gmail.com</span></div>
               <div className="lead"><a href='https://api.whatsapp.com/send?phone=+5521981853414&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services' rel='noopener noreferrer' target='_blank' className="text-dark"><img src='/images/logos/whatsapp-logo.svg' alt="github-logo" className="contact-logo mr-3" />+55 21 98185-3414</a></div>
               <div className="lead"> <FontAwesomeIcon icon={faGlobeAmericas} className="mr-3" />Rio de Janeiro, Brazil</div>
               <div className="lead"> <a href="https://github.com/PedroMarianoAlmeida" target="_blank" className="text-dark"> <img src='/images/logos/github-logo.svg' alt="github-logo" className="contact-logo mr-3" />PedroMarianoAlmeida</a></div>
               <div className="lead"> <a href="www.linkedin.com/in/pedroprogrammer" target="_blank" className="text-dark"><img src='/images/logos/linkedin-logo.svg' alt="github-logo" className="contact-logo mr-3" />pedroprogrammer</a></div>
               <div className="lead"> <FontAwesomeIcon icon={faGlobe} className="mr-3" /><span className="small-letter">www.pedroprogrammer.com</span></div>
-              <style jsx>{`
+              <style jsx>{`              
               #next-js-logo{
                 width: 10%;
                 hight: 100%;
@@ -40,6 +42,13 @@ export default function Home() {
               }
 
               @media only screen and (max-width: 998px) { 
+                #apresentation{
+                  background-color: rgb(213, 217, 222);
+                  border-radius: 10px;
+                  padding: 5px 0;
+                  margin: 5px 0;
+                }
+                
                 #my-name{
                   font-size: 2.5em;
                 }
