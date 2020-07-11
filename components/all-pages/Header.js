@@ -1,86 +1,51 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import {
     Collapse,
     Navbar,
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
-    NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
 } from 'reactstrap';
 
+import AdressToGo from './AdressToGo'
+import DropdownItemToGo from './DropdownItemToGo'
+
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-    const sizeToggle = "md"
 
     return (
         <div>
-            <Navbar color="light" light expand={sizeToggle} className="d-flex justify-content-between">
-                <NavbarBrand><Link href="/"><span className="text-dark clickable">Pedro Programmer</span></Link></NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <div className={`align-content-end mr-1 d-none d-${sizeToggle}-flex`}>
-                    <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar >
-                        <NavItem className="mx-2">
-                            <NavLink><Link href="/"><span className="text-dark clickable">Home</span></Link></NavLink>
-                        </NavItem>
+            <Navbar color="light" light expand="md">
+                <NavbarBrand href="/">Pedro Programmer</NavbarBrand>
+                <NavbarToggler onClick={toggle} className="align-content-end mr-1 d-flex" />
 
-                        <NavItem className="mx-2">
-                            <NavLink><Link href="/about"><span className="text-dark clickable">About</span></Link></NavLink>
-                        </NavItem>
-
-                        <NavItem className="mx-2">
-                            <NavLink><Link href="/blog"><span className="text-dark clickable">Blog</span></Link></NavLink>
-                        </NavItem>
-
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="mr-auto" navbar>
+                        <AdressToGo adress="/" name="Home" />
+                        <AdressToGo adress="/about" name="About" />
+                        <AdressToGo adress="/blog" name="Blog" />
                         <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                <span className="text-dark mx-2">Dev Tips</span>
-                            </DropdownToggle>
+                            <DropdownToggle nav caret> Dev Tips </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
-                                    <Link href="/code-tips/next-js"><span className="text-dark">Next.js</span></Link>
-                                </DropdownItem>
-
-                                <DropdownItem>
-                                    <Link href="/code-tips/react"><span className="text-dark">React</span></Link>
-                                </DropdownItem>
-
+                                <DropdownItemToGo adress="code-tips/react" name="React" />
                                 <DropdownItem divider />
-
-                                <DropdownItem>                                   
-                                    <Link href="/code-tips/bootstrap"><span className="text-dark">Bootstrap</span></Link>
-                                </DropdownItem>
-
-                                <DropdownItem>
-                                    <Link href="/code-tips/reactstrap"><span className="text-dark">ReactStrap</span></Link>
-                                </DropdownItem>
-
-                                <DropdownItem>
-                                    <Link href="/code-tips/css"><span className="text-dark">CSS</span></Link>
-                                </DropdownItem>
-
+                                <DropdownItemToGo adress="code-tips/bootstrap" name="Bootstrap" />
+                                <DropdownItemToGo adress="code-tips/reactstrap" name="ReactStrap" />
+                                <DropdownItemToGo adress="code-tips/css" name="CSS" />
                                 <DropdownItem divider />
-
-                                <DropdownItem>
-                                    <Link href="/code-tips/javascript"><span className="text-dark">JavaScript</span></Link>
-                                </DropdownItem>
-
-                                <DropdownItem>
-                                    <Link href="/code-tips/vs-code"><span className="text-dark">VS Code</span></Link>
-                                </DropdownItem>
-
+                                <DropdownItemToGo adress="code-tips/javascript" name="JavaScript" />
+                                <DropdownItemToGo adress="code-tips/vs-code" name="VS Code" />
+                                <DropdownItem divider />
+                                <DropdownItemToGo adress="code-tips/web-api" name="Web API" />
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
-                </div>
             </Navbar>
         </div>
     );
