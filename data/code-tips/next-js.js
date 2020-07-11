@@ -1,4 +1,10 @@
-const NEXT_TIPS = [
+const CODE_TIPS_DATA = {
+    "main-page": {
+        title: "Next.js Tips",
+        description: "The best tips for everyday use of Next.js, by Pedro Programmer"
+    },
+
+    tips: [
     {
         title: "How create a Next.js app?",
         content: "npx create-next-app app-name"
@@ -13,6 +19,6 @@ const NEXT_TIPS = [
         title: "How to put image in Next.js",
         content: "1.Put the image in public folder, on the root of project / 2.<img src='/local-in-public-folder' alt='your-image-description'/> 3.Source: https://nextjs.org/docs/basic-features/static-file-serving"
     }
-]
+]}
 
-export default NEXT_TIPS;
+export default CODE_TIPS_DATA;

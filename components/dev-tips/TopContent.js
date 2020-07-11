@@ -5,7 +5,7 @@ const TopContent = (props) => {
         <Col xs="12">
             <h1>{props.title}</h1>
             <p>{props.subtitle}</p>
-            <p>Click on question to see the answer</p>
+            <p className="bg-danger">Click on question to see the answer</p>
         </Col>
     );
 }
