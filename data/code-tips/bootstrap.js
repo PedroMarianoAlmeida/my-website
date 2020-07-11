@@ -1,7 +1,7 @@
 const BOOTSTRAP_TIPS = [
     {
         title: "How to center anything?",
-        content: "Text (or SVG): class text-center on parent / Content inside the DIV (the div is 100% his parent but the content not fill all height): align-self-center"
+        content: "Text (or SVG): class text-center on parent / Content inside the DIV (the div is 100% his parent but the content not fill all height): align-self-center / Center the content of a DIV only in md screens: d-flex d-md-block justify-content-center"
     },
     
     {
