@@ -37,8 +37,7 @@ export default function Home() {
               }
 
               .contact-logo{
-                width: 3.5%;
-                hight: 100%;
+                width: 3.5%;                
               }
 
               @media only screen and (max-width: 998px) { 
@@ -54,8 +53,7 @@ export default function Home() {
                 }
 
                 #next-js-logo{
-                  width: 15%;
-                  hight: 100%;
+                  width: 15%;                  
                 }
 
                 .small-letter{
@@ -70,7 +68,7 @@ export default function Home() {
             `}</style>
             </Col>
             <Col xs="12" md="5">
-              <div className="d-flex d-md-block justify-content-center"><img src='images/profile.jpg' className="img-fluid img-thumbnail rounded-circle" alt="profile-photo" id="my-image" /></div>
+              <div className="d-flex d-md-block justify-content-center"><img src='images/profile.jpg' className="img-thumbnail rounded-circle" alt="profile-photo" id="my-image" /></div>
               <style jsx>{`
                 #my-image{
                  width: 80%;
