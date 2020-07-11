@@ -28,7 +28,6 @@ export default function Home() {
               <style jsx>{`              
               #next-js-logo{
                 width: 10%;
-                hight: 100%;
               }
 
               .contact-logo{
@@ -48,7 +47,7 @@ export default function Home() {
                 }
 
                 #next-js-logo{
-                  width: 15%;                  
+                  width: 50px;                  
                 }
 
                 .small-letter{
@@ -72,7 +71,7 @@ export default function Home() {
                 @media only screen and (max-width: 998px) { 
                   #my-image{
                     margin-top: 1rem;
-                    width: 60%;
+                    width: 150px;
                   }
                 }
               `}</style>
