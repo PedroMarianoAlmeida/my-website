@@ -18,7 +18,14 @@ const CODE_TIPS_DATA = {
     {
         title: "How to put image in Next.js",
         content: "1.Put the image in public folder, on the root of project / 2.<img src='/local-in-public-folder' alt='your-image-description'/> 3.Source: https://nextjs.org/docs/basic-features/static-file-serving"
-    }
+    },
+
+    {
+        title: "How use Bootstrap with in Next.js",
+        content: "way I use: https://www.youtube.com/watch?v=fKSMMmQGruM / another way: https://www.youtube.com/watch?v=xhriGpfq-Uw (the first seems be more reliable)"
+    },
+
+
 ]}
 
 export default CODE_TIPS_DATA;

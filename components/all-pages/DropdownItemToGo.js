@@ -3,9 +3,13 @@ import { DropdownItem } from 'reactstrap';
 
 const DropdownItemToGo = (props) => {
     return (
-        <DropdownItem>
-            <Link href={props.adress}><span className="text-dark">{props.name}</span></Link>
-        </DropdownItem>
+        <Link href={props.adress} as={props.as}>
+            <DropdownItem>
+                <a className="text-dark">
+                    {props.name}
+                </a>
+            </DropdownItem>
+        </Link>
     );
 }
 

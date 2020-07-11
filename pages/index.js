@@ -1,10 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faEnvelope,
-  faWhatsapp,
-  faGlobeAmericas,
-  faGlobe
-} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faGlobeAmericas, faGlobe } from '@fortawesome/free-solid-svg-icons' //Some itens doens't worked that way, so I downloaded the rest
 
 import { Col, Jumbotron, Row } from 'reactstrap'
 

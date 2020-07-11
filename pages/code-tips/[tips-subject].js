@@ -7,7 +7,9 @@ const CodeTips = (props) => {
     
       <Layout>
         <TopContent title={props.title} subtitle={props.description} />
-        {props.tips.map((tip, index) => <DevTips title={tip.title} content={tip.content} key={index} />)}
+        <ul className="list-group list-group-flush">
+          {props.tips.map((tip, index) => <DevTips title={tip.title} content={tip.content} key={index} />)}
+        </ul>
       </Layout>
     
   );
@@ -25,7 +27,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const allPaths = ["bootstrap", "css", "next-js", "reactstrap", "vs-code", "web-api", "react", "javascript"]
+  const allPaths = ["bootstrap", "css", "next-js", "reactstrap", "vs-code", "web-tools", "react", "javascript"]
   const allPathFormated = []
   allPaths.forEach( path => allPathFormated.push( {params: {"tips-subject": path} } ))
   

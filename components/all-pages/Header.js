@@ -18,6 +18,7 @@ const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const sizeToggle = "md";
+    const dynamicAdressCodeTips = "/code-tips/[tips-subject]"
 
     return (
         <div>
@@ -28,20 +29,22 @@ const Header = (props) => {
                     <Collapse isOpen={isOpen} navbar className="d-flex justify-content-end">
                         <Nav className={`${!isOpen ? 'd-none' : ''} d-${sizeToggle}-flex`} navbar>
                             <AdressToGo adress="/" name="Home" />
-                            <AdressToGo adress="/about" name="About" />
-                            <AdressToGo adress="/contact" name="Contact" />
+                            {/*
+                                <AdressToGo adress="/about" name="About" />
+                                <AdressToGo adress="/projects" name="Projects" />
+                                <AdressToGo adress="/blog" name="Blog" />
+                            */}
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret className="text-dark"> Dev Tips </DropdownToggle>
                                 <DropdownMenu right>
-                                    <DropdownItemToGo adress="code-tips/bootstrap" name="Bootstrap" />
-                                    <DropdownItemToGo adress="code-tips/reactstrap" name="ReactStrap" />
-                                    <DropdownItemToGo adress="code-tips/css" name="CSS" />
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/bootstrap" name="Bootstrap" />
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/reactstrap" name="ReactStrap" />
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/css" name="CSS" />
                                     <DropdownItem divider />
-                                    <DropdownItemToGo adress="code-tips/javascript" name="JavaScript" />
-                                    <DropdownItemToGo adress="code-tips/vs-code" name="VS Code" />
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/javascript" name="JavaScript" />
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/vs-code" name="VS Code" />
                                     <DropdownItem divider />
-                                    <DropdownItemToGo adress="code-tips/web-api" name="Web API" />
-
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/web-tools" name="Web Tools" />
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>
