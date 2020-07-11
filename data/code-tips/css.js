@@ -2,7 +2,7 @@ const CSS_TIPS = [
     {
         title: "How to change cursor to user notice that item is clickabe?",
         content: "Short answer: cursor: pointer;"
-    }
+    },
 
     {
         title: "How to aply rules to specific screen sizes?",
