@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const allPaths = ["bootstrap", "css", "next-js", "reactstrap", "vs-code", "web-api"]
+  const allPaths = ["bootstrap", "css", "next-js", "reactstrap", "vs-code", "web-api", "react", "javascript"]
   const allPathFormated = []
   allPaths.forEach( path => allPathFormated.push( {params: {"tips-subject": path} } ))
   
