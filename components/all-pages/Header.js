@@ -37,6 +37,9 @@ const Header = (props) => {
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret className="text-dark"> Dev Tips </DropdownToggle>
                                 <DropdownMenu right>
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/react" name="React" />
+                                    <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/next-js" name="Next.js" />
+                                    <DropdownItem divider />                                    
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/bootstrap" name="Bootstrap" />
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/reactstrap" name="ReactStrap" />
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/css" name="CSS" />

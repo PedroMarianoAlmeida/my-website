@@ -10,7 +10,7 @@ const DevTips = (props) => {
             {props.title}
             <Collapse isOpen={isOpen}>
                 <div>
-                    {props.content}
+    {typeof props.content === 'string' ? props.content : <div dangerouslySetInnerHTML={props.content} />}
                 </div>
             </Collapse>
         </li>

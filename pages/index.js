@@ -17,7 +17,7 @@ export default function Home() {
               <div className="lead">Hi, I am</div>
               <div id="apresentation">
                 <div className="display-3 d-flex d-md-block justify-content-center" id="my-name">Pedro Almeida</div>
-                <div className="lead d-flex d-md-block justify-content-center"><img src='/images/logos/next-js-logo.png' alt="Next" className="w-25" /><span className="my-auto">.js Developer</span></div>
+                <div className="lead d-flex d-md-block justify-content-center"><img src='/images/logos/next-js-logo.png' alt="Next" id='next-js-logo' /><span className="my-auto">.js Developer</span></div>
               </div>
               <div className="lead"> <FontAwesomeIcon icon={faEnvelope} className="mr-3" /><span className="small-letter">pedroprogrammer@gmail.com</span></div>
               <div className="lead"><a href='https://api.whatsapp.com/send?phone=+5521981853414&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services' rel='noopener noreferrer' target='_blank' className="text-dark"><img src='/images/logos/whatsapp-logo.svg' alt="github-logo" className="contact-logo mr-3" />+55 21 98185-3414</a></div>
@@ -26,6 +26,11 @@ export default function Home() {
               <div className="lead"> <a href="www.linkedin.com/in/pedroprogrammer" target="_blank" className="text-dark"><img src='/images/logos/linkedin-logo.svg' alt="github-logo" className="contact-logo mr-3" />pedroprogrammer</a></div>
               <div className="lead"> <FontAwesomeIcon icon={faGlobe} className="mr-3" /><span className="small-letter">www.pedroprogrammer.com</span></div>
               <style jsx>{`              
+              #next-js-logo{
+                width: 50px;
+                hight: 15px;
+              }
+
               .contact-logo{
                 width: 3.5%;                
               }
@@ -54,7 +59,21 @@ export default function Home() {
             `}</style>
             </Col>
             <Col xs="12" md="5">
-              <div className="d-flex d-md-block justify-content-center"><img src='images/profile.jpg' className="img-thumbnail rounded-circle w-50" alt="profile-photo"/></div>
+              <div className="d-flex d-md-block justify-content-center"><img src='images/profile.jpg' className="img-thumbnail rounded-circle" alt="profile-photo" id="my-image" /></div>
+              <style jsx>{`
+                #my-image{
+                 width: 350px;
+                 height: 350px;
+                }
+                
+                @media only screen and (max-width: 998px) { 
+                  #my-image{
+                    margin-top: 1rem;
+                    width: 200px;
+                    height: 200px;
+                  }
+                }
+              `}</style>
             </Col>
           </Row>
         </Jumbotron>

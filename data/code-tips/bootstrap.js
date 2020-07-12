@@ -7,7 +7,19 @@ const CODE_TIPS_DATA = {
     tips: [
         {
             title: "How to center anything?",
-            content: "Text (or SVG): class text-center on parent / Content inside the DIV (the div is 100% his parent but the content not fill all height): align-self-center / Center the content of a DIV only in md screens: d-flex d-md-block justify-content-center"
+            content: {
+                __html: `
+                    <ul>
+                        <li>Text (or SVG) - Horizontal:</li>
+                        <ul><li>class text-center on parent</li></ul>
+                        <li>Content inside the DIV (the div is 100% his parent but the content not fill all height) - Horizontal:</li>
+                        <ul><li>align-self-center</li></ul>
+                        <li>Center the content of a DIV only in md screens - Horizontal:</li>
+                        <ul><li> d-flex d-md-block justify-content-center</li></ul>
+                        <li>Center a div witch is nested in another div taller - vertical:</li>
+                        <ul><li>my-auto</li></ul>
+                    </ul>
+                `}
         },
 
         {
