@@ -16,6 +16,8 @@ const CODE_TIPS_DATA = {
                         <ul><li>align-self-center</li></ul>
                         <li>Center the content of a DIV only in md screens - Horizontal:</li>
                         <ul><li> d-flex d-md-block justify-content-center</li></ul>
+                        <li>Center a div witch is nested in another div larger - horizontal:</li>
+                        <ul><li>d-flex justify-content-center (on parent)</li></ul> 
                         <li>Center a div witch is nested in another div taller - vertical:</li>
                         <ul><li>my-auto</li></ul>
                     </ul>

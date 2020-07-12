@@ -6,8 +6,8 @@ const CODE_TIPS_DATA = {
 
     tips: [
     {
-        title: "No tips until now",
-        content: ""
+        title: "How to install all dependecies in a project whithout the 'Module Folder'?",
+        content: "npm install"
     }
 ]}
 
