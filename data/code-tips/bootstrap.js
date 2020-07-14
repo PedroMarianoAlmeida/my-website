@@ -20,6 +20,8 @@ const CODE_TIPS_DATA = {
                         <ul><li>d-flex justify-content-center (on parent)</li></ul> 
                         <li>Center a div witch is nested in another div taller - vertical:</li>
                         <ul><li>my-auto</li></ul>
+                        <li>Center a div inside a row - vertical:</li>
+                        <ul><li>d-flex align-items-center</li></ul>
                     </ul>
                 `}
         },
