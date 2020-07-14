@@ -39,6 +39,10 @@ const CODE_TIPS_DATA = {
             content: "primary, secondary, sucess, danger, warning, info, light, dark, muted, white"
         },
 
+        {
+            title: "Image treatment classes",
+            content: "img-thumbnail img-fluid"
+        },
 
     ]
 }
