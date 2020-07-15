@@ -6,8 +6,8 @@ const CODE_TIPS_DATA = {
 
     tips: [
     {
-        title: "No tips until now",
-        content: ""
+        title: "Check if an string is part of another string",
+        content: "searched.includes(search)"
     }
 ]}
 
