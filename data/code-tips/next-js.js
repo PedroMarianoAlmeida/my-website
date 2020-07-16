@@ -81,6 +81,17 @@ const CODE_TIPS_DATA = {
     },
 
     {
+        title: "How to run Next.js page locally (and how to interrupt it)",
+        content: {
+            __html:
+                `<ul>
+            <li>Initialize: npm run dev</li>
+            <li>Interrupt it: Ctrl C (on terminal), then Y</li>
+        </ul>`
+        }
+    },
+
+    {
         title: "How to put image in Next.js",
         content: "1.Put the image in public folder, on the root of project / 2.<img src='/local-in-public-folder' alt='your-image-description'/> 3.Source: https://nextjs.org/docs/basic-features/static-file-serving"
     },
