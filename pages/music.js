@@ -9,7 +9,7 @@ const Music = () => {
     return (
         <Layout>
             <TopContent title="Música" subtitle="Cifras curtinhas" />
-            <ul className="list-group list-group-flush">
+            <ul className="list-group list-group-flush w-100">
                 {MUSIC_DATA.tips.map((tip, index) => <DevTips title={tip.title} content={tip.content} key={index} />)}
             </ul>
         </Layout>

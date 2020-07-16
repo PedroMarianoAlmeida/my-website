@@ -7,7 +7,7 @@ const CodeTips = (props) => {
     
       <Layout>
         <TopContent title={props.title} subtitle={props.description} />
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush w-100">
           {props.tips.map((tip, index) => <DevTips title={tip.title} content={tip.content} key={index} />)}
         </ul>
       </Layout>
