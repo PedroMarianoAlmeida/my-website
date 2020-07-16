@@ -99,6 +99,37 @@ const MUSIC_DATA = {
             }
         },
 
+        {
+            title: "Ar condicionado no 15",
+            content: {
+                __html:
+                    `<ul>
+                <li>Base:</li>
+                <ul>
+                    <li>G Bm</li>
+                    <li><u>C9 D</u> (Em7 - Só na 1ª vez)
+                </ul>
+                <li>Refrão: G D Em7 <u>C9 D</u></li>
+            </ul>`
+            }
+        },
+
+        {
+            title: "Resposta",
+            content: {
+                __html:
+                    `<ul>
+                <li>Base:</li>
+                <ul>
+                    <li>A A5+ D7+ F</li>
+                    <li><b>F#m D7+</b></li>
+                    <li>Especial: A <u>A4 A A9</u> D7+</li>
+                </ul>
+                <li>Refrão: A Bm D7+</li>
+            </ul>`
+            }
+        },
+
 
     ]
 
