@@ -8,7 +8,23 @@ const CODE_TIPS_DATA = {
     {
         title: "How to install all dependecies in a project whithout the 'Module Folder'?",
         content: "npm install"
-    }
+    },
+
+        {
+        title: "How to insert innerHTML on react",
+        content: {
+            __html:
+                `<ul>
+                    <li>Is not recommended, but is possible</li>
+                    <li>HTML should be on a object {__html: "my-html-data"}</li>
+                    <li>On element, the HTML should appear, insert it on a propriety named dangerouslySetInnerHTML</li>
+                    <li>Source: <a herf="https://pt-br.reactjs.org/docs/dom-elements.html">here</a></li>
+                </ul>`
+        }
+    },
+    
+
+
 ]}
 
 export default CODE_TIPS_DATA;
