@@ -13,7 +13,28 @@ const CODE_TIPS_DATA = {
     {
         title: "Where to find Icons/logos",
         content: "Font Awsome: https://fontawesome.com/ and https://www.npmjs.com/package/@fortawesome/react-fontawesome for react / CSS Icons: https://css.gg/app"
-    }
+    },
+
+    {
+        title: "How record screen (to readme of Github projects)",
+        content: "Desktop: ShareX / CellPhone: V Recorder"
+    },
+
+    {
+        title: "Where to find good photos?",
+        content: "https://unsplash.com/"
+    },
+
+    {
+        title: "Crop images online",
+        content: "https://www.iloveimg.com/crop-image"
+    },
+
+    {
+        title: "GIF to Video (to include on Linkedin)",
+        content: "https://ezgif.com/gif-to-mp4"
+    },
 ]}
 
 export default CODE_TIPS_DATA;
+

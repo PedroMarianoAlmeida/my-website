@@ -59,7 +59,7 @@ export default function Home() {
             `}</style>
             </Col>
             <Col xs="12" md="5">
-              <div className="d-flex d-md-block justify-content-center"><img src='images/profile.jpg' className="img-thumbnail rounded-circle" alt="profile-photo" id="my-image" /></div>
+              <div className="d-flex d-md-block justify-content-center"><img src='images/profile.jpeg' className="img-thumbnail rounded-circle" alt="profile-photo" id="my-image" /></div>
               <style jsx>{`
                 #my-image{
                  width: 350px;
