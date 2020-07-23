@@ -101,6 +101,27 @@ const CODE_TIPS_DATA = {
         content: "way I use: https://www.youtube.com/watch?v=fKSMMmQGruM / another way: https://www.youtube.com/watch?v=xhriGpfq-Uw (the first seems be more reliable)"
     },
 
+    {
+        title: "How include private Key in Projects",
+        content: {
+            __html:
+                `<ul>
+            <li>Create a file ".env.local" on root (no need to include in .gitignore pecause it already there</li>
+            <ul><li>Insert the variable and the string value (if have more than one, put in diferent lines without comma or semicolon)</li></ul>
+            <li>Create a file "next.config.js" on root</li>
+            <ul>
+                <li>Insert an object "module.export"</li>    
+                <li>Inside this object, create a "env" property</li>
+                <li>The value of this property is another object with the variables as properties</li>
+                <li>The value should be "process.env.NAME_OF_MY_VARIABLE"</li>
+            </ul>
+            <li>Here use in project, insert "process.env.NAME_OF_MY_VARIABLE" too</li>
+            <li>On vercel dashboard, create this variables and its values (without quotation marks)</li>
+            <ul><li>If the project is alread commited to master, is needed to redeploy (and when changed the Enviorement Variables)</li></ul>
+        </ul>`
+        }
+    },
+
 
 ]}
 
