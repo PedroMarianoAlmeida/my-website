@@ -28,23 +28,16 @@ const CODE_TIPS_DATA = {
                     <ul>
                         <li>Choose some random element in index.js and insert class "bg-danger" to see when it's work</li>
                         <li>Open a new terminal (because the first one is running the aplication)</li>
-                        <li>type <strong>npm install react-bootstrap</strong> on terminal and wait conclude</li>
+                        <li>type <strong>npm install --save bootstrap</strong> on terminal and wait conclude</li>
                         <ul><li>This install the bootstrap itself </li></ul>
                         <li>The stpes above is fallowing <a href="https://www.youtube.com/watch?v=fKSMMmQGruM" target="_blank">this youtube tutorial</a></li>
                         <li>type <strong>npm install --save @zeit/next-css</strong></li>
                         <ul><li>This was in offical documentation but is not there anymore, and zeit is the previous name of Vercel (the company who create Next.js)<li></ul>
-                        <li>On the root of the project, create a file called <strong>next.config.js</strong></li>
-                        <li>Inside insert this code: <br /> 
-                            const withCSS = require('@zeit/next-css');  <br /> 
-                            module.exports = withCSS({});
-                        </li>
-                        <ul><li>I remove this file and my project continue with bootstrap, check this</li></ul>
-                        <li>In tutotial, he put Bootstrap in only one component, but I want to aply to all project... so I change the steps</li>
                         <li>In pages folder create a file called <strong>_app.js</strong></li>
                         <ul><li>This is in the <a href="https://nextjs.org/docs/basic-features/built-in-css-support" target="_blank"></a>offical documentation to insert global CSS</ul><li>
                         <li>Inside insert this code (also in documentation): <br /> 
                         export default function MyApp({ Component, pageProps }) { <br /> 
-                            return <Component {...pageProps} /><br /> 
+                            return &lt;Component {...pageProps} />&lt;br /> 
                           }
                         </li>
                         <li>Insert the bootstrap import on first line: <strong>import 'bootstrap/dist/css/bootstrap.min.css';</strong></li>
