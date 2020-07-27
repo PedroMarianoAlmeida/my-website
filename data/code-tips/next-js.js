@@ -115,6 +115,11 @@ const CODE_TIPS_DATA = {
         }
     },
 
+        {
+        title: "How to go to another page without click on a Link component",
+        content: "useRouter hook (https://nextjs.org/docs/api-reference/next/router)"
+    },
+
 
 ]}
 
