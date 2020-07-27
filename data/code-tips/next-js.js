@@ -103,7 +103,7 @@ const CODE_TIPS_DATA = {
             <ul><li>Insert the variable and the string value (if have more than one, put in diferent lines without comma or semicolon)</li></ul>
             <li>Create a file "next.config.js" on root</li>
             <ul>
-                <li>Insert an object "module.export"</li>    
+                <li>Insert an object "module.exports"</li>    
                 <li>Inside this object, create a "env" property</li>
                 <li>The value of this property is another object with the variables as properties</li>
                 <li>The value should be "process.env.NAME_OF_MY_VARIABLE"</li>
