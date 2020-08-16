@@ -14,7 +14,14 @@ const CODE_TIPS_DATA = {
         title: "Check if an object has one specific property",
         content: "obj.hasOwnProperty(prop) - more info in https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/HasOwnProperty"
     },
+
+    {
+        title: "The best Promises content",
+        content: "http://taoofcode.net/promise-anti-patterns/"
+    },
 ]}
 
 export default CODE_TIPS_DATA;
+
+
 
