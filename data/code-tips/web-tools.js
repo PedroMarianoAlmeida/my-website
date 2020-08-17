@@ -34,7 +34,14 @@ const CODE_TIPS_DATA = {
         title: "GIF to Video (to include on Linkedin)",
         content: "https://ezgif.com/gif-to-mp4"
     },
+
+    {
+        title: "Share content in social media",
+        content: "https://gist.github.com/apisandipas/74d396c7853b93f5f861091a2135d527"
+    },
 ]}
 
 export default CODE_TIPS_DATA;
+
+
 
