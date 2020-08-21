@@ -6,11 +6,11 @@ const DevTips = (props) => {
     const toggle = () => setIsOpen(!isOpen);
     return (
 
-        <li onClick={toggle} className="clickable list-group-item">
-            {props.title}
+        <li className="clickable list-group-item">
+            <div onClick={toggle}>{props.title}</div>
             <Collapse isOpen={isOpen}>
                 <div>
-    {typeof props.content === 'string' ? props.content : <div dangerouslySetInnerHTML={props.content} />}
+                    {typeof props.content === 'string' ? props.content : <div dangerouslySetInnerHTML={props.content} />}
                 </div>
             </Collapse>
         </li>

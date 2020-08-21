@@ -22,6 +22,11 @@ const CODE_TIPS_DATA = {
                 </ul>`
         }
     },
+
+        {
+        title: "Input with deboucing",
+        content: "https://www.npmjs.com/package/react-debounce-input"
+    },
     
 
 
