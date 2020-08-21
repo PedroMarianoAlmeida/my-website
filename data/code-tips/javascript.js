@@ -19,6 +19,11 @@ const CODE_TIPS_DATA = {
         title: "The best Promises content",
         content: "http://taoofcode.net/promise-anti-patterns/"
     },
+
+    {
+        title: "How remove the accentuation of a String",
+        content: "https://gist.github.com/marcelo-ribeiro/abd651b889e4a20e0bab558a05d38d77"
+    },
 ]}
 
 export default CODE_TIPS_DATA;
