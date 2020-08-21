@@ -24,6 +24,12 @@ const CODE_TIPS_DATA = {
         title: "How remove the accentuation of a String",
         content: "https://gist.github.com/marcelo-ribeiro/abd651b889e4a20e0bab558a05d38d77"
     },
+
+    {
+        title: "How test the code",
+        content: "https://jestjs.io/docs/en/getting-started.html"
+    },   
+
 ]}
 
 export default CODE_TIPS_DATA;
