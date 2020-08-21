@@ -39,6 +39,23 @@ const CODE_TIPS_DATA = {
         title: "Share content in social media",
         content: "https://gist.github.com/apisandipas/74d396c7853b93f5f861091a2135d527"
     },
+
+    {
+        title: "Nice Gradients Colors",
+        content: "https://www.eggradients.com/"
+    },
+
+    {
+        title: "Record Screen on Computer",
+        content: "Desktop: Share X"
+    },
+
+    {
+        title: "Work as voluntary",
+        content: "https://www.volunteermatch.org/"
+    },
+
+    
 ]}
 
 export default CODE_TIPS_DATA;
