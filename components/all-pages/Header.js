@@ -29,9 +29,9 @@ const Header = (props) => {
                     <Collapse isOpen={isOpen} navbar className="d-flex justify-content-end">
                         <Nav className={`${!isOpen ? 'd-none' : ''} d-${sizeToggle}-flex`} navbar>
                             <AdressToGo adress="/" name="Home" />
+                            <AdressToGo adress="/projects" name="Projects" />
                             {/*
-                                <AdressToGo adress="/about" name="About" />
-                                <AdressToGo adress="/projects" name="Projects" />
+                                <AdressToGo adress="/about" name="About" />                                
                                 <AdressToGo adress="/blog" name="Blog" />
                             */}
                             <UncontrolledDropdown nav inNavbar>

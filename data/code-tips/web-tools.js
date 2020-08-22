@@ -22,7 +22,7 @@ const CODE_TIPS_DATA = {
 
     {
         title: "Where to find good photos?",
-        content: "https://unsplash.com/"
+        content: "https://unsplash.com/ and https://pixabay.com/"
     },
 
     {
@@ -53,9 +53,7 @@ const CODE_TIPS_DATA = {
     {
         title: "Work as voluntary",
         content: "https://www.volunteermatch.org/"
-    },
-
-    
+    },    
 ]}
 
 export default CODE_TIPS_DATA;
