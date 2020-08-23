@@ -10,10 +10,11 @@ const Projects = () => {
             {projectsData.map((project, index) => 
                 <MagazineArticle 
                     key={index}
-                    imageOn={index % 2 === 0 ? 'left' : 'right'} 
+            imageOn={index % 2 === 0 ? 'left' : 'right'} 
                     title={project.title}
                     sourceImagePath={project.sourceImagePath}
-                    imageDescription={project.imageDescription}
+                    imagePath={project.imageDescription}
+                    videoPath={project.videoPath}
                     description={project.description}
                 />
             )}

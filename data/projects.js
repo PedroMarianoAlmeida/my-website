@@ -1,36 +1,34 @@
 export const projectsData = [
+    
     {
         title: 'Caio Andrade Mixing',
-        sourceImagePath: '/images/projects/bi-language-produtor-musician.gif',
+        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Freelancer'],
+        imagePath: '/videos/projects/caio-andrade-mixing.gif',
+        videoPath: '/videos/projects/caio-andrade-mixing.mp4',
         imageDescription: 'Image of Caio Andrade Mixing website recorder',
         description: {__html: `
-            <p>This is a Bi-language website for show a Musical Producer's portfolio</p>
+            <p>This is a Bi-language website (english - portuguese) for show a Musical Producer's portfolio</p>
             <p>
                 <a href='https://www.caioandrademixing.com/' target='__blank'>Oficial Page</a>
                 /
                 <a href='https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-' target='__blank'>Github Repositorie</a>
             </p>
-            <p>Tech Stack</p>
-            <ul>
-                <li>Next.js Framework</li>
-                <li>React</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Bootstrap and Reactstrap</li>
-            </ul>
         `}
     },
-    /* 
+    
     {
         title: 'My Fridge Meal',
-        sourceImagePath: '/images/projects/bi-language-produtor-musician.gif',
+        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Web API', 'Google Cloud'],
+        imagePath: '/videos/projects/my-fridge-meal.gif',
+        videoPath: '/videos/projects/my-fridge-meal.mp4',     
+        imageDescription: 'Image of My Fridge Meal website recorder',
         description: {__html: `
-            <p>This is a Bi-language website for show the portfolio to a Musical Producer</p>
-            <p>Tech Stack</p>
-            <ul>
-                <strong>Next.js Framework</strong>
-                <ul>Teste</ul>
-            </ul>
+            <p>This is a Bi-language (english - portuguese) webapp where user insert the ingredients and recieve a list of recipies to make</p>
+            <p>It is a project in progress</p>
+            <p>
+                <a href='http://myfridgemeal.com/' target='__blank'>Oficial Page</a>
+            </p>
         `}
     },
-    */
+    
 ]
