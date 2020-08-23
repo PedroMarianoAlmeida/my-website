@@ -16,6 +16,7 @@ const Projects = () => {
                     imagePath={project.imageDescription}
                     videoPath={project.videoPath}
                     description={project.description}
+                    tags={project.tags}
                 />
             )}
         </Layout>

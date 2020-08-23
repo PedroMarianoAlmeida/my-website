@@ -7,7 +7,7 @@ export const projectsData = [
         videoPath: '/videos/projects/caio-andrade-mixing.mp4',
         imageDescription: 'Image of Caio Andrade Mixing website recorder',
         description: {__html: `
-            <p>This is a Bi-language website (english - portuguese) for show a Musical Producer's portfolio</p>
+            <p>This is a Bi-language website (english - portuguese) for to show a Musical Producer portfolio</p>
             <p>
                 <a href='https://www.caioandrademixing.com/' target='__blank'>Oficial Page</a>
                 /
