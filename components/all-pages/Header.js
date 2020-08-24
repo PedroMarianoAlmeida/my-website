@@ -23,7 +23,7 @@ const Header = (props) => {
     return (
         <div>
             <div>
-                <Navbar color="light" light expand="md">
+                <Navbar color="light" light expand="md" className='fixed-top'>
                     <NavbarBrand href="/">Pedro Programmer</NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar className="d-flex justify-content-end">

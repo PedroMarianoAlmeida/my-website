@@ -8,7 +8,7 @@ const Layout = (props) => {
         <React.Fragment>        
             <SEO seo={props.seo || ""}/>
             <Header />
-            <Container>
+            <Container className='mt-5'>
                 <Row>
                     {props.children}
                 </Row>

@@ -10,7 +10,7 @@ const Projects = () => {
             {projectsData.map((project, index) => 
                 <MagazineArticle 
                     key={index}
-            imageOn={index % 2 === 0 ? 'left' : 'right'} 
+            imageOn='left' 
                     title={project.title}
                     sourceImagePath={project.sourceImagePath}
                     imagePath={project.imageDescription}
