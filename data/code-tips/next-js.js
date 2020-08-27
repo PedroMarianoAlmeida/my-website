@@ -6,10 +6,10 @@ const CODE_TIPS_DATA = {
 
     tips: [
 
-    {
-        title: "My intere workflow to create a project",
-        content: {
-            __html: `
+        {
+            title: "My intere workflow to create a project",
+            content: {
+                __html: `
                 <ul>
                     <li>Create Project</li>
                     <ul>
@@ -61,44 +61,44 @@ const CODE_TIPS_DATA = {
                     <ul><li>Finish later</li></ul>                  
                 </ul>
             `}
-    },
+        },
 
-    {
-        title: "How create a Next.js app?",
-        content: "npx create-next-app app-name"
-    },
-    
-    {
-        title: "How initialize Next.js?",
-        content: "Short answer: npm run dev"
-    },
+        {
+            title: "How create a Next.js app?",
+            content: "npx create-next-app app-name"
+        },
 
-    {
-        title: "How to run Next.js page locally (and how to interrupt it)",
-        content: {
-            __html:
-                `<ul>
+        {
+            title: "How initialize Next.js?",
+            content: "Short answer: npm run dev"
+        },
+
+        {
+            title: "How to run Next.js page locally (and how to interrupt it)",
+            content: {
+                __html:
+                    `<ul>
             <li>Initialize: npm run dev</li>
             <li>Interrupt it: Ctrl C (on terminal), then Y</li>
         </ul>`
-        }
-    },
+            }
+        },
 
-    {
-        title: "How to put image in Next.js",
-        content: "1.Put the image in public folder, on the root of project / 2.<img src='/local-in-public-folder' alt='your-image-description'/> 3.Source: https://nextjs.org/docs/basic-features/static-file-serving"
-    },
+        {
+            title: "How to put image in Next.js",
+            content: "1.Put the image in public folder, on the root of project / 2.<img src='/local-in-public-folder' alt='your-image-description'/> 3.Source: https://nextjs.org/docs/basic-features/static-file-serving"
+        },
 
-    {
-        title: "How use Bootstrap with in Next.js",
-        content: "way I use: https://www.youtube.com/watch?v=fKSMMmQGruM / another way: https://www.youtube.com/watch?v=xhriGpfq-Uw (the first seems be more reliable)"
-    },
+        {
+            title: "How use Bootstrap with in Next.js",
+            content: "way I use: https://www.youtube.com/watch?v=fKSMMmQGruM / another way: https://www.youtube.com/watch?v=xhriGpfq-Uw (the first seems be more reliable)"
+        },
 
-    {
-        title: "How include private Key in Projects",
-        content: {
-            __html:
-                `<ul>
+        {
+            title: "How include private Key in Projects",
+            content: {
+                __html:
+                    `<ul>
             <li>Create a file ".env.local" on root (no need to include in .gitignore pecause it already there</li>
             <ul><li>Insert the variable and the string value (if have more than one, put in diferent lines without comma or semicolon)</li></ul>
             <li>Create a file "next.config.js" on root</li>
@@ -112,15 +112,28 @@ const CODE_TIPS_DATA = {
             <li>On vercel dashboard, create this variables and its values (without quotation marks)</li>
             <ul><li>If the project is alread commited to master, is needed to redeploy (and when changed the Enviorement Variables)</li></ul>
         </ul>`
-        }
-    },
+            }
+        },
 
         {
-        title: "How to go to another page without click on a Link component",
-        content: "useRouter hook (https://nextjs.org/docs/api-reference/next/router)"
-    },
+            title: "How to go to another page without click on a Link component",
+            content: "useRouter hook (https://nextjs.org/docs/api-reference/next/router)"
+        },
 
+        {
+            title: "How to make a local fetch",
+            content: {
+                __html:
+                    `<ul>
+                        <li>It should work with fecth(relative_path) and this video prove it () but sometimes this happens and I didn't figure out why yet</li>
+                        <li>Here are a function that does this: https://codeconqueror.com/blog/get-the-current-url-in-next-js</li>
+                        <li>But I achieve the result that I want with req.headers.host</li>
+                    </ul>`
+            }
+        },       
 
-]}
+    ]
+}
 
 export default CODE_TIPS_DATA;
+
