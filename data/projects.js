@@ -33,7 +33,7 @@ export const projectsData = [
 
     {
         title: 'Storybook React Components',
-        tags: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Storybook'],
+        tags: ['React', 'HTML', 'JavaScript', 'Bootstrap', 'Storybook'], //Insert CSS and WebAPI when create something
         imagePath: '/videos/projects/storybook.gif',
         videoPath: '/videos/projects/storybook.mp4',      
         imageDescription: 'Image of My Fridge Meal website recorder',
