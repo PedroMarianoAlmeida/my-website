@@ -30,5 +30,19 @@ export const projectsData = [
             </p>
         `}
     },
+
+    {
+        title: 'Storybook React Components',
+        tags: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Storybook'],
+        imagePath: '/videos/projects/storybook.gif',
+        videoPath: '/videos/projects/storybook.mp4',      
+        imageDescription: 'Image of My Fridge Meal website recorder',
+        description: {__html: `
+            <p>This is my personal Library of components made in React and I used Storybook to separate of my websites</p>
+            <a href='https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/example-introduction--page' target='__blank'>Oficial Page</a>
+            /
+            <a href='https://github.com/PedroMarianoAlmeida/storybook-components' target='__blank'>Github Repositorie</a>
+        `}
+    },
     
 ]

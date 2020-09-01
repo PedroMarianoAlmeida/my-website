@@ -10,7 +10,7 @@ const MagazineArticle = (props) => {
                 <Col xs='12' md='7' className="my-1">
                     <video autoPlay muted loop="loop" className='w-100 img-thumbnail shadow'>
                         <source src={props.videoPath} type="video/mp4" className='w-100' />
-                        <img src={props.simagePath} alt={props.imageDescription} className='w-100' />
+                        <img src={props.imagePath} alt={props.imageDescription} className='w-100' />
                     </video>
                 </Col>
 
