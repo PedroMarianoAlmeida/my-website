@@ -39,6 +39,7 @@ const Header = (props) => {
                                 <DropdownToggle nav caret className="text-dark"> Blog </DropdownToggle>
                                 <DropdownMenu right>
                                     <Link href='/blog/publications/functions'><DropdownItem><a className="text-dark"> Function </a></DropdownItem></Link>
+                                    <Link href='/blog/publications/free-content'><DropdownItem><a className="text-dark"> Free Dev Content </a></DropdownItem></Link>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
 

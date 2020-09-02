@@ -4,10 +4,10 @@ import { Col } from 'reactstrap'
 
 const Projects = () => {
     return (
-        <Layout seo={{ title: "Article - Functions | Pedro Programmer", description: "The best projects made by Pedro Almeida", author: "Pedro Almeida" }}>
+        <Layout seo={{ title: "Article - Functions | Pedro Programmer", description: "An article about functions in JavaScript for begginers", author: "Pedro Almeida" }}>
 
-            <Col xs='12' className="d-flex justify-content-center">
-                <h1 className="mt-5 pt-3 text-center">Functions in JavaScript</h1>
+            <Col xs='12' className="mt-2 d-flex justify-content-center">
+                <h1 className="text-center">Functions in JavaScript</h1>
             </Col>
 
             <Col xs='12' className="my-2">
@@ -24,12 +24,12 @@ const Projects = () => {
                 <p className="text-justify">Functions are a piece of code that doens't follow the regular flow of the program (top to bottom). When the compiler sees a function, all code inside it is ignored and the program starts the reading again right after the end of the function.</p>
                 <p>But when you want this code to run, you have to call it (or invoke, it is the same thing). Then the program enters the function and executes like a regular code, and after it ends, the program comes back to the line of the calling.</p>
                 <h2>Practice time:</h2>
-                <p>In this exercise, my goal is to dynamically change the text in HTML, I strongly recommend that you write the code in our own text editor and test each step of the process.</p>
+                <p>In this exercise, my goal is to dynamically change the text in HTML, I strongly recommend that you write the code in our own text editor and test each step of the process (the new parts of code will be in bold).</p>
 
                 <ul>
                     <li>First lets write some inicial code to work:
                         <div className="container border border-secondary d-bolck m-4 bg-light">
-                            <code>
+                            <code><strong>
                                 <div>{'<body>'}
                                     <div className="ml-3 mb-2">{'<h1 id="my-text">My first text</h1>'}</div>
 
@@ -38,6 +38,7 @@ const Projects = () => {
                                         <div className="ml-3 my-2">let text = document.getElementById("my-text");</div>
                                         {'</script>'} </div>
                                     {'</body>'} </div>
+                                    </strong>
                             </code>
                         </div>
                     </li>
