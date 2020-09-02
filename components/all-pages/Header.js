@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
     Collapse,
     Navbar,
@@ -35,11 +36,18 @@ const Header = (props) => {
                                 <AdressToGo adress="/blog" name="Blog" />
                             */}
                             <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret className="text-dark"> Blog </DropdownToggle>
+                                <DropdownMenu right>
+                                    <Link href='/blog/publications/functions'><DropdownItem><a className="text-dark"> Function </a></DropdownItem></Link>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+
+                            <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret className="text-dark"> Dev Tips </DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/react" name="React" />
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/next-js" name="Next.js" />
-                                    <DropdownItem divider />                                    
+                                    <DropdownItem divider />
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/bootstrap" name="Bootstrap" />
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/reactstrap" name="ReactStrap" />
                                     <DropdownItemToGo adress="dynamicAdressCodeTips" as="/code-tips/css" name="CSS" />
