@@ -59,5 +59,18 @@ export const projectsData = [
             <a href='https://github.com/PedroMarianoAlmeida/movie-finder-react' target='__blank'>Github Repositorie</a>
         `}
     },
+
+    {
+        title: 'Event Page (mock data)',
+        tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Jquery'],
+        imagePath: '/videos/projects/event-page.gif',
+        videoPath: '/videos/projects/event-page.mp4',      
+        imageDescription: 'Image of Event Page recorder',
+        description: {__html: `
+            <p>This is a product of the <a href='https://vanhack.com/' target='_blank'>VanRack</a>'s exam to check the level of skills in JavaScript, HTML, and CSS.</p>
+            <p>I'm so satisfied with the result that I decided to put on my portfolio. And I score 92/100, which is a good result.</p>
+            <a href='https://stupefied-mcnulty-88e925.netlify.app/' target='__blank'>Page</a>
+        `}
+    },
     
 ]
