@@ -36,12 +36,27 @@ export const projectsData = [
         tags: ['React', 'HTML', 'JavaScript', 'Bootstrap', 'Storybook'], //Insert CSS and WebAPI when create something
         imagePath: '/videos/projects/storybook.gif',
         videoPath: '/videos/projects/storybook.mp4',      
-        imageDescription: 'Image of My Fridge Meal website recorder',
+        imageDescription: 'Image of my Sotrybook website recorder',
         description: {__html: `
             <p>This is my personal Library of components made in React and I used Storybook to separate of my websites</p>
             <a href='https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/example-introduction--page' target='__blank'>Oficial Page</a>
             /
             <a href='https://github.com/PedroMarianoAlmeida/storybook-components' target='__blank'>Github Repositorie</a>
+        `}
+    },
+
+    {
+        title: 'Movie Finder',
+        tags: ['React', 'HTML', 'JavaScript', 'Bootstrap',],
+        imagePath: '/videos/projects/movie-finder.gif',
+        videoPath: '/videos/projects/movie-finder.mp4',      
+        imageDescription: 'Image of Movie Finder website recorder',
+        description: {__html: `
+            <p>A web app were the user type a term and the website returns movies and series with the keyword.</p>
+            <p>When clicking on a movie the user goes to another page with the details. And there is a dark/light theme implemented too (study purposes).</p>
+            <a href='https://desolate-ridge-36137.herokuapp.com/' target='__blank'>Page</a>
+            /
+            <a href='https://github.com/PedroMarianoAlmeida/movie-finder-react' target='__blank'>Github Repositorie</a>
         `}
     },
     
