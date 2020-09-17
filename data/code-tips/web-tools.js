@@ -53,10 +53,17 @@ const CODE_TIPS_DATA = {
     {
         title: "Work as voluntary",
         content: "https://www.volunteermatch.org/"
+    },  
+    
+    {
+        title: "CSS Box Shadow Tool",
+        content: "https://www.cssmatic.com/box-shadow"
     },    
 ]}
 
 export default CODE_TIPS_DATA;
+
+
 
 
 
