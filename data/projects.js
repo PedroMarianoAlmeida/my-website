@@ -7,7 +7,7 @@ export const projectsData = [
         videoPath: '/videos/projects/caio-andrade-mixing.mp4',
         imageDescription: 'Image of Caio Andrade Mixing website recorder',
         description: {__html: `
-            <p>This is a Bi-language website (english - portuguese) for to show a Musical Producer portfolio</p>
+            <p>This is a Bi-language website (English - Portuguese) to show a Musical Producer portfolio</p>
             <p>
                 <a href='https://www.caioandrademixing.com/' target='__blank'>Oficial Page</a>
                 /
@@ -23,8 +23,7 @@ export const projectsData = [
         videoPath: '/videos/projects/my-fridge-meal.mp4',     
         imageDescription: 'Image of My Fridge Meal website recorder',
         description: {__html: `
-            <p>This is a Bi-language (english - portuguese) webapp where user insert the ingredients and recieve a list of recipies to make</p>
-            <p>It is a project in progress</p>
+            <p>This is a multi-language (English, Portuguese, Spanish, and French) web app where the user inserts the ingredients and receives a list of recipes to choose one to prepare.</p>
             <p>
                 <a href='http://myfridgemeal.com/' target='__blank'>Oficial Page</a>
             </p>
@@ -38,7 +37,7 @@ export const projectsData = [
         videoPath: '/videos/projects/storybook.mp4',      
         imageDescription: 'Image of my Sotrybook website recorder',
         description: {__html: `
-            <p>This is my personal Library of components made in React and I used Storybook to separate of my websites</p>
+            <p>This is my personal Library of components made in React. I used Storybook to make my components and separate the logic of my website's business rules.</p>
             <a href='https://affectionate-stonebraker-6ad0ad.netlify.app/?path=/story/example-introduction--page' target='__blank'>Oficial Page</a>
             /
             <a href='https://github.com/PedroMarianoAlmeida/storybook-components' target='__blank'>Github Repositorie</a>
@@ -52,7 +51,7 @@ export const projectsData = [
         videoPath: '/videos/projects/movie-finder.mp4',      
         imageDescription: 'Image of Movie Finder website recorder',
         description: {__html: `
-            <p>A web app were the user type a term and the website returns movies and series with the keyword.</p>
+            <p>A web app where the user types a term and the website returns movies and series with the keyword.</p>
             <p>When clicking on a movie the user goes to another page with the details. And there is a dark/light theme implemented too (study purposes).</p>
             <a href='https://desolate-ridge-36137.herokuapp.com/' target='__blank'>Page</a>
             /
