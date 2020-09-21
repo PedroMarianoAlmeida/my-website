@@ -59,6 +59,11 @@ const CODE_TIPS_DATA = {
         title: "CSS Box Shadow Tool",
         content: "https://www.cssmatic.com/box-shadow"
     },    
+
+    {
+        title: "Write and test Markdown",
+        content: "https://stackedit.io/app#"
+    },    
 ]}
 
 export default CODE_TIPS_DATA;
