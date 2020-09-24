@@ -64,9 +64,16 @@ const CODE_TIPS_DATA = {
         title: "Write and test Markdown",
         content: "https://stackedit.io/app#"
     },    
+
+        {
+        title: "Start Strapi server",
+        content: "npm run strapi develop"
+    },  
 ]}
 
 export default CODE_TIPS_DATA;
+
+
 
 
 
