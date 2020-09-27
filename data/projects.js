@@ -1,24 +1,8 @@
 export const projectsData = [
     
     {
-        title: 'Caio Andrade Mixing',
-        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Freelancer'],
-        imagePath: '/videos/projects/caio-andrade-mixing.gif',
-        videoPath: '/videos/projects/caio-andrade-mixing.mp4',
-        imageDescription: 'Image of Caio Andrade Mixing website recorder',
-        description: {__html: `
-            <p>This is a Bi-language website (English - Portuguese) to show a Musical Producer portfolio</p>
-            <p>
-                <a href='https://www.caioandrademixing.com/' target='__blank'>Oficial Page</a>
-                /
-                <a href='https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-' target='__blank'>Github Repositorie</a>
-            </p>
-        `}
-    },
-    
-    {
         title: 'My Fridge Meal',
-        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Web API', 'Google Cloud'],
+        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Web API', 'Google Translate API', 'Advertising'],
         imagePath: '/videos/projects/my-fridge-meal.gif',
         videoPath: '/videos/projects/my-fridge-meal.mp4',     
         imageDescription: 'Image of My Fridge Meal website recorder',
@@ -31,8 +15,39 @@ export const projectsData = [
     },
 
     {
+        title: 'Caio Andrade Mixing',
+        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Freelancer', 'SEO', 'Google Lighthouse'],
+        imagePath: '/videos/projects/caio-andrade-mixing.gif',
+        videoPath: '/videos/projects/caio-andrade-mixing.mp4',
+        imageDescription: 'Image of Caio Andrade Mixing website recorder',
+        description: {__html: `
+            <p>This is a Bi-language website (English - Portuguese) to show a Musical Producer portfolio</p>
+            <p>
+                <a href='https://www.caioandrademixing.com/' target='__blank'>Oficial Page</a>
+                /
+                <a href='https://github.com/PedroMarianoAlmeida/Bi-Language-Portfolio-WebApp-in-Next.js-musician-' target='__blank'>Github Repositorie</a>
+            </p>
+        `}
+    },
+
+    {
+        title: 'Geo-portfolio Template',
+        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Google Maps API'],
+        imagePath: '/videos/projects/behind-the-lens.gif',
+        videoPath: '/videos/projects/behind-the-lens.mp4',      
+        imageDescription: 'Image of my Sotrybook website recorder',
+        description: {__html: `
+            <p>This is a template design for being used to show a portfolio based in geographical positions</p>
+            <p>In my example is a fictional called "Behind the Lens" project, when is exhibit photos of photographers around the world</p>
+            <a href='https://geoportfolio-template.vercel.app/' target='__blank'>Oficial Page</a>
+            /
+            <a href='https://github.com/PedroMarianoAlmeida/geoportfolio-template' target='__blank'>Github Repositorie</a>
+        `}
+    },
+
+    {
         title: 'Storybook React Components',
-        tags: ['React', 'HTML', 'JavaScript', 'Bootstrap', 'Storybook'], //Insert CSS and WebAPI when create something
+        tags: ['React', 'HTML', 'JavaScript', 'Bootstrap', 'Storybook', 'Google Maps API'], //Insert CSS and WebAPI when create something
         imagePath: '/videos/projects/storybook.gif',
         videoPath: '/videos/projects/storybook.mp4',      
         imageDescription: 'Image of my Sotrybook website recorder',
