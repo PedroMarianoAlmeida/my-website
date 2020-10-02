@@ -23,13 +23,18 @@ const CODE_TIPS_DATA = {
         }
     },
 
-        {
+    {
         title: "Input with deboucing",
         content: "https://www.npmjs.com/package/react-debounce-input"
     },
     
+    {
+        title: "Incialize a Storybook server in react app",
+        content: "npm run storybook"
+    },
 
 
 ]}
 
 export default CODE_TIPS_DATA;
+
