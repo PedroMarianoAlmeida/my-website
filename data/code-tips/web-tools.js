@@ -130,11 +130,18 @@ const CODE_TIPS_DATA = {
                     
                 </ol>`
         }
-    }
+    },
+
+    {
+        title: "Qhat to do When broke the GraphQL playground",
+        content: "run on console: localStorage.clear(); localStorage.setItem = () => {}"
+    }, 
 
 ]}
 
 export default CODE_TIPS_DATA;
+
+
 
 
 
