@@ -50,8 +50,8 @@ export default function Home() {
               <div className="lead"><a href='https://api.whatsapp.com/send?phone=+5521981853414&text=Hi,%20I%20want%20to%20know%20more%20about%20your%20services' rel='noopener noreferrer' target='_blank' className="text-dark"><img src='/images/logos/whatsapp-logo.svg' alt="github-logo" className="contact-logo mr-3" />+55 21 98185-3414</a></div>
               <div className="lead"> <FontAwesomeIcon icon={faGlobeAmericas} className="mr-3" />Rio de Janeiro, Brazil</div>
               <div className="lead"> <a href="https://github.com/PedroMarianoAlmeida" target="_blank" className="text-dark"> <img src='/images/logos/github-logo.svg' alt="github-logo" className="contact-logo mr-3" />PedroMarianoAlmeida</a></div>
-              <div className="lead"> <a href="www.linkedin.com/in/pedroprogrammer" target="_blank" className="text-dark"><img src='/images/logos/linkedin-logo.svg' alt="github-logo" className="contact-logo mr-3" />pedroprogrammer</a></div>
-              <div className="lead"> <FontAwesomeIcon icon={faGlobe} className="mr-3" /><span className="small-letter">www.pedroprogrammer.com</span></div>
+              <div className="lead"> <a href="https://www.linkedin.com/in/pedroprogrammer" target="_blank" className="text-dark"><img src='/images/logos/linkedin-logo.svg' alt="github-logo" className="contact-logo mr-3" />pedroprogrammer</a></div>
+              <div className="lead"> <FontAwesomeIcon icon={faGlobe} className="mr-3" /><span className="small-letter">https://pedroprogrammer.com/</span></div>
               <style jsx>{`              
               #next-js-logo{
                 width: 8%;
