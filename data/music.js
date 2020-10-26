@@ -135,7 +135,7 @@ const MUSIC_DATA = {
             content: {
                 __html:
                     `<ul>
-                <li>1ª Parte: b>F# B F#</b> G#7 C#7</li>
+                <li>1ª Parte: <b>F# B F#</b> G#7 C#7</li>
                 <li>Refrão: B A <u>D7 C#7</u> F# <u>B</u> F#</li>                
                 <li>2ª Parte
                 <ul>
