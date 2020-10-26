@@ -130,6 +130,28 @@ const MUSIC_DATA = {
             }
         },
 
+        {
+            title: "Alma nova",
+            content: {
+                __html:
+                    `<ul>
+                <li>1ª Parte
+                <ul>
+                    <li><b>F# B F#</b> G#7 C#7</li>
+                    <li>B A <u>D7 C#7</u> F# <u>B</u> F#</li>          
+                </ul>
+                </li>
+                <li>2ª Parte
+                <ul>
+                    <li>D#m B F# C#7</li>
+                    <li>1ª vez: D#m D7 B C#7</li>
+                    <li><b>G#7</b> B C#7</li>          
+                </ul>
+                </li>
+            </ul>`
+            }
+        },
+
 
     ]
 
