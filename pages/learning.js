@@ -1,18 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-const getQuestionById = async (id) => {
-    const response = await fetch(`http://localhost:1337/questions/${id}`);
-    const data = await response.json()
-    return data; 
-}
+import getRandomIndexInArray from './../functions/generic-usage/getRandomIndexInArray';
 
-const getRandomIndexInArray = (arr) => {
-    const randomIndex = Math.floor( Math.random()* arr.length );
-    return randomIndex;
-}
+import { getQuestionById, getAllIds } from './../functions/questionBackendHandler';
 
-const Learning = () => {
-    const allQuestionsId = [ 1, 2 ];
+const Learning = (props) => {    
+    const allQuestionsId = props.value;   
+    
     const [ questionsRemaining, setQuestionsRemaining ] = useState(allQuestionsId);
     const [ currentQuestion, setCurrentQuestion ] = useState('');
     
@@ -33,9 +27,14 @@ const Learning = () => {
         <>
             <h1>Learning</h1>
             <button onClick={startsQuestion}>Question</button>
-            {JSON.stringify(currentQuestion)}
+            { JSON.stringify(currentQuestion) }
         </>
       );
 }
  
 export default Learning;
+
+export const getServerSideProps = async() => {
+    const myIds = await getAllIds();
+    return{props: {value: myIds}}
+}
