@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import SingleExactText from './../components/questions/SingleExactText';
+
 import getRandomIndexInArray from './../functions/generic-usage/getRandomIndexInArray';
 
 import { getQuestionById, getAllIds } from './../functions/questionBackendHandler';
@@ -28,6 +30,10 @@ const Learning = (props) => {
             <h1>Learning</h1>
             <button onClick={startsQuestion}>Question</button>
             { JSON.stringify(currentQuestion) }
+            <SingleExactText 
+                question={currentQuestion.body}
+                answer={currentQuestion.answer}
+            />
         </>
       );
 }
