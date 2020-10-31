@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import SingleExactText from './../components/questions/SingleExactText';
+import QuestionHandler from '../components/questions/QuestionHandler';
 import getRandomIndexInArray from './../functions/generic-usage/getRandomIndexInArray';
 import { getQuestionById, getAllIds } from './../functions/questionBackendHandler';
 
@@ -12,7 +12,6 @@ const Learning = (props) => {
     const [runNewQuestion, setRunNewQuestion] = useState(false);
 
     const startsQuestion = async () => {
-        console.log(questionsRemaining);
         if (!questionsRemaining.length) setCurrentQuestion('All questions answered')
         else {
             const currentQuestionIndex = getRandomIndexInArray(questionsRemaining);
@@ -27,30 +26,23 @@ const Learning = (props) => {
     useEffect(() => {
         if( runNewQuestion ){
             startsQuestion();
-            setRunNewQuestion(false)
+            setRunNewQuestion(false);
+            console.log(currentQuestion);
         }
     },[runNewQuestion])
 
     return (
         <>
             <h1>Learning</h1>  
-            <button onClick={startsQuestion}>{currentQuestion === '' ? 'Start' : 'Skip'}</button>     
-            { JSON.stringify(currentQuestion)}
+            <button className='btn btn-primary m-2' onClick={startsQuestion}>{currentQuestion === '' ? 'Start' : 'Skip'}</button>     
 
-            {currentQuestion === '' || currentQuestion === 'All questions answered' ? 
+            {currentQuestion === '' || currentQuestion === <div>All questions answered</div> ? 
                 <div>No question to display</div> :               
-                
-                <SingleExactText
-                    question={currentQuestion.body}
-                    answer={currentQuestion.correct_answer.answer}
-                    caseSensitive={currentQuestion.correct_answer.caseSensitive}
-                    explanation={currentQuestion.explanation}
+                <QuestionHandler 
+                    currentQuestion={currentQuestion}
                     setRunNewQuestion={setRunNewQuestion}
                 />
             }
-
-
-
         </>
     );
 }

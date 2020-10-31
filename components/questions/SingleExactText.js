@@ -4,7 +4,7 @@ const ExactText = ({question, answer, caseSensitive, explanation, setRunNewQuest
     const [ inputValue, setInputValue ] = useState('');
     const [ answerCorrect, setAnswerCorrect ] = useState(null);
 
-    const [disableInput, setDisableInput] = useState(false);
+    const [ alreadyAnswered, setAlreadyAnswerd ] = useState(false);
     const [ extraText, setExtraText ] = useState('');
 
     const handleChange = (e) => {
@@ -15,12 +15,12 @@ const ExactText = ({question, answer, caseSensitive, explanation, setRunNewQuest
         e.preventDefault();
         if (caseSensitive) setAnswerCorrect(inputValue === answer);
         else setAnswerCorrect( inputValue.toLowerCase() === answer.toLowerCase() );
-        setDisableInput(true);
+        setAlreadyAnswerd(true);
     }
 
     const tryAgain = () => {
         setInputValue('');
-        setDisableInput(false);
+        setAlreadyAnswerd(false);
         setAnswerCorrect(null);
     }
 
@@ -39,10 +39,13 @@ const ExactText = ({question, answer, caseSensitive, explanation, setRunNewQuest
                     placeholder="type your answer"
                     value={inputValue}
                     onChange={handleChange}
-                    disabled={disableInput}                    
+                    disabled={alreadyAnswered}                    
                 /> 
 
-                <input className='d-block my-3 btn btn-primary' type='submit' disabled={!inputValue} />
+                <input 
+                    className={`my-3 btn btn-primary ${alreadyAnswered ? 'd-none' : 'd-block'}`} 
+                    type='submit' 
+                />
             </form>
 
             <div className={`${answerCorrect === null ? 'd-none' : 'border m-2'}`}>     
