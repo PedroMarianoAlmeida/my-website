@@ -4,6 +4,14 @@ import getRandomIndexInArray from './../functions/generic-usage/getRandomIndexIn
 import { getQuestionById, getAllIds } from './../functions/questionBackendHandler';
 
 const Learning = (props) => {    
+    /*
+    const test = {
+        rightAnswer: ['int'],
+        wrongAnswers: ['var', 'let', 'const']
+    };
+
+    console.log(JSON.stringify(test));
+    */
     const allQuestionsId = props.value;
 
     const [questionsRemaining, setQuestionsRemaining] = useState(allQuestionsId);
@@ -16,6 +24,7 @@ const Learning = (props) => {
         else {
             const currentQuestionIndex = getRandomIndexInArray(questionsRemaining);
             const myQuestion = await getQuestionById(questionsRemaining[currentQuestionIndex])
+            console.log(myQuestion);
             setCurrentQuestion(myQuestion);
 
             questionsRemaining.splice(currentQuestionIndex, 1)
@@ -27,7 +36,7 @@ const Learning = (props) => {
         if( runNewQuestion ){
             startsQuestion();
             setRunNewQuestion(false);
-            console.log(currentQuestion);
+            //console.log(currentQuestion);
         }
     },[runNewQuestion])
 
