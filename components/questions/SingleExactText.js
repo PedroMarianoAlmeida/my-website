@@ -1,21 +1,37 @@
 import { useState } from 'react';
 
-const ExactText = ({question, answer, caseSensitive, numberOfTips, explanation, ...props}) => {
+const ExactText = ({question, answer, caseSensitive, explanation, setRunNewQuestion, ...props}) => {
     const [ inputValue, setInputValue ] = useState('');
     const [ answerCorrect, setAnswerCorrect ] = useState(null);
-    
+
+    const [disableInput, setDisableInput] = useState(false);
+    const [ extraText, setExtraText ] = useState('');
+
     const handleChange = (e) => {
         setInputValue(e.target.value);
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setAnswerCorrect(inputValue === answer);
+        if (caseSensitive) setAnswerCorrect(inputValue === answer);
+        else setAnswerCorrect( inputValue.toLowerCase() === answer.toLowerCase() );
+        setDisableInput(true);
+    }
+
+    const tryAgain = () => {
+        setInputValue('');
+        setDisableInput(false);
+        setAnswerCorrect(null);
+    }
+
+    const newQuestion = () => {
+        tryAgain();
+        setRunNewQuestion(true);
     }
     
     return ( 
         <>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='m-2'>
                 <label className='d-block my-3'>{question}</label>
 
                 <input 
@@ -23,16 +39,53 @@ const ExactText = ({question, answer, caseSensitive, numberOfTips, explanation, 
                     placeholder="type your answer"
                     value={inputValue}
                     onChange={handleChange}
+                    disabled={disableInput}                    
                 /> 
-                
-                <button className='btn btn-primary'>Use Tip</button>
 
                 <input className='d-block my-3 btn btn-primary' type='submit' disabled={!inputValue} />
             </form>
 
-            <div className={`${answerCorrect === null ? 'd-none' : 'border w-25'}`}>           
-                <div>This answer is {answerCorrect ? 'correct' : 'incorrect'}.</div>
-                <div>{answerCorrect ? explanation : `The correct answer is ${answer}`}</div>
+            <div className={`${answerCorrect === null ? 'd-none' : 'border m-2'}`}>     
+                {answerCorrect ? 
+                    <div>
+                        <div>Correct Answer</div>
+                        <div>{explanation}</div>
+                    </div> : 
+                    <div>
+                        <div className='m-2'>
+                            <div>Wrong answer</div>
+                            <div>{caseSensitive ? <small>Note: This question is Case Sensitive'</small> : ''}</div> 
+                        </div>
+                        <div>
+                            <div>
+                                <button 
+                                    onClick={tryAgain} 
+                                    className='btn btn-primary m-2'
+                                >
+                                        Try again
+                                </button>
+                                <button 
+                                    onClick={() => setExtraText(explanation)}
+                                    className='btn btn-primary m-2'
+                                >
+                                        Explanation
+                                </button>
+                                <button 
+                                    onClick={() => setExtraText(answer)}
+                                    className='btn btn-primary m-2'
+                                >
+                                    Answer
+                                </button>
+                            </div>
+                            <div>
+                                {extraText}
+                            </div>
+                        </div>
+                    </div>}
+ 
+                <button onClick={newQuestion} className='btn btn-primary m-2'>
+                    Next Question
+                </button>
             </div>
        </>
      );
