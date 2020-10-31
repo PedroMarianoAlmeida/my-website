@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
-
 import SingleExactText from './../components/questions/SingleExactText';
-
 import getRandomIndexInArray from './../functions/generic-usage/getRandomIndexInArray';
-
 import { getQuestionById, getAllIds } from './../functions/questionBackendHandler';
 
 const Learning = (props) => {    
@@ -36,18 +33,20 @@ const Learning = (props) => {
 
     return (
         <>
-            <h1>Learning</h1>
-            <button onClick={startsQuestion}>Question</button>
+            <h1>Learning</h1>  
+            <button onClick={startsQuestion}>{currentQuestion === '' ? 'Start' : 'Skip'}</button>     
             { JSON.stringify(currentQuestion)}
 
-            {currentQuestion !== '' ?
+            {currentQuestion === '' || currentQuestion === 'All questions answered' ? 
+                <div>No question to display</div> :               
+                
                 <SingleExactText
                     question={currentQuestion.body}
                     answer={currentQuestion.correct_answer.answer}
                     caseSensitive={currentQuestion.correct_answer.caseSensitive}
                     explanation={currentQuestion.explanation}
                     setRunNewQuestion={setRunNewQuestion}
-                /> : ''
+                />
             }
 
 
