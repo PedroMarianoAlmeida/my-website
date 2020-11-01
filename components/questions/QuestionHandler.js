@@ -1,4 +1,5 @@
 import SingleExactText from '../questions/SingleExactText'
+import MultipleChoiceMultipleResults from './MultipeChoiceMultipeResults'
 import MultipleChoiceSingleResult from './MultipeChoiceSingleResult'
 
 const selectRightType = (currentQuestion, setRunNewQuestion) => {
@@ -13,13 +14,34 @@ const selectRightType = (currentQuestion, setRunNewQuestion) => {
                 setRunNewQuestion={setRunNewQuestion}
             />
         case "Multiple Choice Single Result":
-            return <MultipleChoiceSingleResult
+            return <MultipleChoiceMultipleResults
                 question={currentQuestion.body}
                 rightAnswer={currentQuestion.answer.rightAnswer}
                 wrongAnswers={currentQuestion.answer.wrongAnswers}
                 explanation={currentQuestion.explanation}
                 setRunNewQuestion={setRunNewQuestion}
             />
+
+            case "Multiple Choice Multiple Results":
+                return <MultipleChoiceSingleResult
+                    question={currentQuestion.body}
+                    rightAnswers={currentQuestion.answer.rightAnswers}
+                    wrongAnswers={currentQuestion.answer.wrongAnswers}
+                    explanation={currentQuestion.explanation}
+                    setRunNewQuestion={setRunNewQuestion}
+                />
+            //Multiple Choice Multiple Result
+            //Multiple Exact Text
+            //Pair words
+            //Pair words and images
+            //Put words in correct order
+            //Put words and images in correct order
+            //Connect the first column with the second (only words)
+            //Connect the first column with the second (words and images)
+            //Type words for slots
+            //Drag specific words for slots
+            //Drag specific images for slots
+            //Run javascript code and test them
             
         default:
             return <div>

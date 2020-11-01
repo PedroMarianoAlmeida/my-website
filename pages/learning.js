@@ -4,14 +4,14 @@ import getRandomIndexInArray from './../functions/generic-usage/getRandomIndexIn
 import { getQuestionById, getAllIds } from './../functions/questionBackendHandler';
 
 const Learning = (props) => {    
-    /*
+    
     const test = {
-        rightAnswer: ['int'],
-        wrongAnswers: ['var', 'let', 'const']
+        rightAnswer: ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'],
+        wrongAnswers: ['black', 'brown', 'pink', 'purple']
     };
 
     console.log(JSON.stringify(test));
-    */
+    
     const allQuestionsId = props.value;
 
     const [questionsRemaining, setQuestionsRemaining] = useState(allQuestionsId);
