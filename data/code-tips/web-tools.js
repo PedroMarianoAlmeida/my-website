@@ -133,9 +133,21 @@ const CODE_TIPS_DATA = {
     },
 
     {
-        title: "Qhat to do When broke the GraphQL playground",
+        title: "What to do When broke the GraphQL playground",
         content: "run on console: localStorage.clear(); localStorage.setItem = () => {}"
     }, 
+
+        {
+        title: "Get Information of other websites",
+        content: {
+            __html:
+                `<ul>
+                    <li>Tech Stack: https://builtwith.com/</li>
+                    <li>Color used: ColorZilla (google chrome plugin)</li>
+                    <li>Text font: Fontface Ninja (google chrome plugin)</li>
+                </ul>`
+        }
+    },
 
 ]}
 
