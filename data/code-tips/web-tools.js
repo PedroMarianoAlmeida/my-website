@@ -149,6 +149,11 @@ const CODE_TIPS_DATA = {
         }
     },
 
+    {
+        title: "Request status codes",
+        content: "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes and https://httpstatusdogs.com/"
+    }, 
+
 ]}
 
 export default CODE_TIPS_DATA;
