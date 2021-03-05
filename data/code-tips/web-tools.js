@@ -156,7 +156,7 @@ const CODE_TIPS_DATA = {
 
     {
         title: "Tailwind Components",
-        content: "https://tailwindui.com/components"
+        content: "https://tailwindcomponents.com/ and https://tailwindui.com/components"
     }, 
 
     
