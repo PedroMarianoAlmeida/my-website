@@ -154,6 +154,13 @@ const CODE_TIPS_DATA = {
         content: "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes and https://httpstatusdogs.com/"
     }, 
 
+    {
+        title: "Tailwind Components",
+        content: "https://tailwindui.com/components"
+    }, 
+
+    
+
 ]}
 
 export default CODE_TIPS_DATA;
