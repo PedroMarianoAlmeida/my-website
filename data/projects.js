@@ -1,5 +1,21 @@
 export const projectsData = [
-    
+    {
+        title: 'Dummy Coordiate',
+        tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Web API', 'Google Maps API'],
+        imagePath: '/videos/projects/dummy-coordinate.gif',
+        videoPath: '/videos/projects/dummy-coordinate.mp4',     
+        imageDescription: 'Image of Dummy Coordinate website',
+        description: {__html: `
+            <p>Open Source Project built to help the Dev Community to test and prototype applications that use Geographical Coordinates, returning latitude and longitude based on parameters in endpoints.</p>
+            <p>The official webpage, documentation, and endpoints were built in the same Next.js FullStack project</p>            
+            <p>
+            <a href='https://dummy-coordinate.vercel.app/' target='__blank'>Oficial Page</a>
+            /
+            <a href='https://github.com/PedroMarianoAlmeida/random-coordinate' target='__blank'>Github Repositorie</a>
+            </p>
+        `}
+    },
+
     {
         title: 'My Fridge Meal',
         tags: ['Next.js', 'React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Reactstrap', 'Web API', 'Google Translate API', 'Advertising'],
