@@ -9,6 +9,10 @@ const CODE_TIPS_DATA = {
       title: "Cypress: Run tests - Headless",
       content: "npm test (or npm t)",
     },
+    {
+      title: "Cypress: Run tests - Browser",
+      content: "npm run cy:open",
+    },
   ],
 };
 
