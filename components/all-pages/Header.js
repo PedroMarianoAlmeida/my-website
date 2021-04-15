@@ -115,6 +115,11 @@ const Header = (props) => {
                     as="/code-tips/testing"
                     name="Testing"
                   />
+                  <DropdownItemToGo
+                    adress="dynamicAdressCodeTips"
+                    as="/code-tips/mark-down"
+                    name="Mark Down"
+                  />
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

@@ -38,6 +38,7 @@ export async function getStaticPaths() {
     "react",
     "javascript",
     "testing",
+    "mark-down",
   ];
   const allPathFormated = [];
   allPaths.forEach((path) =>
